@@ -30,7 +30,7 @@ if ($('.volumeBox').find('.passVolume').height() != 0) {
         break
       }
 
-      if ($(".current_play > div > .time_icofinish").length == 1) {
+      if ($(".current_play").find(".time_icofinish").length == 1) {
         console.log('turn to next')
         $('#nextBtn').click()
         await sleep(10000)
